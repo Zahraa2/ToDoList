@@ -3,6 +3,7 @@ const mytask = document.getElementById('mytask') ;
 const mytodos  = document.getElementById('mytodos') ; 
 // const close = document.querySelector('.fa-times') ; 
 
+document.body.style.zoom = (window.innerWidth / window.outerWidth) ;
 
 // Add New Task In The Todo
 addtask.addEventListener('click' , (e) => {
