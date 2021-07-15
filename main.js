@@ -21,11 +21,17 @@ addtask.addEventListener('click' , (e) => {
 })
 
 // Remove The Task
+
+
 mytodos.addEventListener('click' , (e) => {
   if (e.target.nodeName == 'I') {
-    e.target.parentNode.parentNode.remove() ;
+    var confirming = confirm('are u sure ?') ; 
+    if ( confirming == true) {
+      e.target.parentNode.parentNode.remove() ;
+    }
   }
 })
+
 
 // list as Done 
 mytodos.addEventListener('click' , (e) => {
